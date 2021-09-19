@@ -1,0 +1,11 @@
+.brands-banners {
+
+    .slick-prev {
+        left: -50px;
+    }
+    
+    .slick-next::before,
+    .slick-prev::before{
+        color: #000;
+    }
+}
