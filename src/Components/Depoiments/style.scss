@@ -1,0 +1,65 @@
+.depoiments {
+
+    position: relative;
+    margin-bottom: -50px;
+
+    .slick-prev {
+        left: 50px;
+    }
+
+    .slick-next {
+        right: 50px;
+    }
+    
+    .slick-next::before,
+    .slick-prev::before{
+        color: #000;
+    }
+
+    &__container {
+        background: #F7F7F7;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        height: 200px;
+        padding-top: 50px;
+    }
+
+    &-avatar {
+        display: flex !important;
+        justify-content: center;
+        align-items:  center;
+
+        &__img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        &__desc {
+            margin-right: 20px;
+        }
+
+        &__name {
+            font-size: 14px;
+            font-weight: 700;
+            color: #041E50;
+        }
+
+        &__job {
+            font-size: 10px;
+            color: #041E50;
+        }
+
+        &__depoiment {
+            width: 500px;
+            padding: 20px 40px;
+            background-color: #FFF;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);
+            border-radius: 5px;
+            font-size: 13px;
+            color: #2F2F2F;
+        }
+    }
+}
