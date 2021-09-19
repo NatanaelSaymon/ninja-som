@@ -1,0 +1,128 @@
+.produtos-destaque {
+    &__container {
+        padding-top: 90px;
+        padding-bottom: 100px;
+        color: #041E50;
+    }
+
+    &__title {
+        font-size: 23px;
+        font-weight: normal;
+        margin-bottom: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    &__cards {
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+
+        &-card {
+            flex: 1 1 33.33%;
+
+            max-width: 220px;
+            width: 100%;
+            margin-bottom: 60px;
+
+            text-align: center;
+            border-radius: 2px;
+            transition: .2s;
+            
+            &-frame {
+                margin-bottom: 10px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+
+                    visibility: hidden;
+                    background: url('../../assets/img/svg/search.svg'), linear-gradient(rgba(0,0,0,0), #fff);
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-size: 55px 55px, auto auto;
+                    opacity: 0;
+                    transition: .2s;
+                }
+
+                &:focus,
+                &:hover {
+                    &::after {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &-img {
+                transition: .2s;
+                transform: translateY(0px);
+            }
+
+            &-info {
+                padding: 10px;
+            }
+
+            &-heading {
+                font-size: 15px;
+                letter-spacing: 1px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            &-desc {
+                font-size: 10px;
+                margin-bottom: 10px;
+            }
+
+            &-price {
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+
+            &:focus,
+            &:hover {
+                box-shadow: 6px 7px 15px -5px rgba(0,0,0,0.65);
+                transform: scale(1.05);
+
+                img {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+
+    &__btn {
+        margin: auto;
+        text-transform: uppercase;
+        color: #041E50;
+        border: 1px solid #041E50;
+
+        &:focus,
+        &:hover {
+            color: #fff;
+            background-color: #041E50;
+        }
+    }
+}

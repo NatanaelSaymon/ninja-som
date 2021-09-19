@@ -10,7 +10,7 @@ function News() {
                             <h2 className="news__card-title">
                                 <span>Áudio</span>Profissional
                             </h2>
-                            <a href="#" className="news__card-btn">Confira</a>
+                            <a href="#" className="news__card-btn btn">Confira</a>
                         </div>
                     </div>
                     <div className="news__card--instruments news__card">
@@ -20,7 +20,7 @@ function News() {
                             <h2 className="news__card-title">
                                 <span>Instrumentos</span>Musicais
                             </h2>
-                            <a href="#" className="news__card-btn">Confira</a>
+                            <a href="#" className="news__card-btn btn">Confira</a>
                         </div>
                     </div>
                 </div>
