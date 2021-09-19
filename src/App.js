@@ -1,6 +1,7 @@
 import Equipaments from './Components/Equipaments';
 import Header from './Components/Header';
 import Hero from './Components/Hero'
+import News from './Components/News';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main>
         <Hero/>
         <Equipaments />
+        <News />
       </main>
     </div>
   );
