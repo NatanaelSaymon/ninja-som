@@ -1,11 +1,35 @@
-.brands-banners {
-
-    .slick-prev {
-        left: -50px;
+.brands {
+    &-banners {
+        .slick-prev {
+            left: -50px;
+        }
+        
+        .slick-next::before,
+        .slick-prev::before{
+            color: #000;
+        }
     }
-    
-    .slick-next::before,
-    .slick-prev::before{
-        color: #000;
+
+    &__title {
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 2px;
+        color: #041E50;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__desc {
+        font-size: 15px;
+        color: #A5A5A5;
+        letter-spacing: 2px;
+
+        text-align: center;
+        margin-bottom: 100px;
     }
 }

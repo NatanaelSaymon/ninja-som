@@ -54,6 +54,8 @@ export default class MultipleItems  extends Component {
         <div>
           <section className="brands">
             <div className="brands__container container">
+              <h1 className="brands__title">As <span>melhores</span> marcas</h1>
+              <p className="brands__desc">it is a long established fact that a reader will be destracted by the readable</p>
                 <Slider {...settings}>
                 {
                     Brands.map((brand) => {
