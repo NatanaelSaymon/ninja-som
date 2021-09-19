@@ -1,0 +1,133 @@
+.footer {
+    background-color: #041E50;
+
+    &__container {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    &-grid {
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            flex: 1 1 auto;
+
+            &--form {
+                flex: 1 1 275px;
+
+                display: flex;
+                justify-content: end;
+            }
+        }
+    }
+
+    &-navigation-list {
+        margin-bottom: 30px;
+
+        &__title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        &__item {
+            margin-bottom: 10px;
+        }
+
+        &__link {
+            color: #fff;
+            font-size: 12px;
+            text-transform: uppercase;
+            transition: .2s;
+
+            &:focus,
+            &:hover {
+                color: #cccccc;
+            }
+        }
+
+        &__wrapper {
+            display: flex;
+
+            li {
+                margin-right: 7px;
+            }
+        }
+    }
+
+    &-form {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 6px;
+        max-width: 275px;
+
+        &__title {
+            font-size: 13px;
+            color: #041E50;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        &__field {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #041E50;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #041E50;
+            text-transform: uppercase;
+        }
+
+        &__btn {
+            width: 110px;
+            height: 35px;
+            font-size: 12px;
+            color: #041E50;
+            border: 1px solid #041E50;
+            line-height: 12px;
+
+            &:focus,
+            &:hover {
+                background-color: #041E50;
+                color: #fff;
+            }
+        }
+    }
+
+    &-copyright {
+        background-color: #fff;
+        padding: 15px 0;
+
+        &__container {
+            display: flex;
+            align-items:  center;
+        }
+
+        &__text {
+            flex: 1 1 auto;
+
+            p {
+                max-width: 500px;
+                font-size: 10px;
+                color: #010101;
+            }
+        }
+
+        &__company {
+            display: flex;
+            align-items:  center;
+            gap: 40px;
+        }
+    }
+}
