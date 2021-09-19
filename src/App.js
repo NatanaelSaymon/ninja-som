@@ -1,15 +1,15 @@
+import Equipaments from './Components/Equipaments';
 import Header from './Components/Header';
-import Top from './Components/Top';
-
-import './style/globals.css'
-
-
+import Hero from './Components/Hero'
 
 function App() {
   return (
     <div>
-      <Top />
       <Header />
+      <main>
+        <Hero/>
+        <Equipaments />
+      </main>
     </div>
   );
 }
